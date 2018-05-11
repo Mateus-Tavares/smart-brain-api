@@ -11,7 +11,7 @@ const image = require('./controllers/image');
 const db = knex({
   client: 'pg',
   connection: {
-    host: '127.0.0.1',
+    host: 'postgresql-colorful-16671',
     user: 'mateustavares',
     password: '',
     database: 'smart-brain'
@@ -32,5 +32,3 @@ const PORT = process.env.PORT;
 app.listen(PORT, () => {
   console.log(`app is running on port ${PORT}`);
 });
-
-console.log(PORT);
